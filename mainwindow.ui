@@ -1843,6 +1843,29 @@
        </rect>
       </property>
      </widget>
+     <widget class="QLineEdit" name="idbNU0CEdit">
+      <property name="geometry">
+       <rect>
+        <x>523</x>
+        <y>298</y>
+        <width>75</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>475</x>
+        <y>300</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>NU_0C:</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>

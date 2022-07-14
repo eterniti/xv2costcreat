@@ -88,6 +88,7 @@ bool MainWindow::Initialize()
     ui->idbDescCopyButton->addAction(ui->actionFromGameCostumeGlovesDesc);
     ui->idbDescCopyButton->addAction(ui->actionFromGameCostumeShoesDesc);
     ui->idbDescCopyButton->addAction(ui->actionFromGameAccessoryDesc);
+    ui->idbNU0CEdit->setValidator(new QIntValidator(this));
 
     set_debug_level(2);
     QDir::setCurrent(qApp->applicationDirPath());
@@ -2462,6 +2463,7 @@ void MainWindow::ItemToGui(const X2mItem &item)
     ui->idbU24Edit->setText(QString("%1").arg((int32_t)item.idb.unk_24[0]));
     ui->idbU28Edit->setText(QString("%1").arg((int32_t)item.idb.unk_24[1]));
     ui->idbU2CEdit->setText(QString("%1").arg((int32_t)item.idb.unk_24[2]));
+    ui->idbNU0CEdit->setText(QString("%1").arg((int32_t)item.idb.new_unk_0C));
 
     if (ui->idbPartSetComboBox->count() < GetMaxNumPartSets())
     {
@@ -2538,6 +2540,7 @@ void MainWindow::GuiToItem(X2mItem &item)
     item.idb.unk_24[0] = (uint32_t) ui->idbU24Edit->text().toInt();
     item.idb.unk_24[1] = (uint32_t) ui->idbU28Edit->text().toInt();
     item.idb.unk_24[2] = (uint32_t) ui->idbU2CEdit->text().toInt();
+    item.idb.new_unk_0C = (uint32_t) ui->idbNU0CEdit->text().toInt();
 
     item.idb.racelock = 0;
 
@@ -2635,6 +2638,7 @@ void MainWindow::on_idbEnableCheck_clicked()
     ui->idbEff1Button->setEnabled(checked);
     ui->idbEff2Button->setEnabled(checked);
     ui->idbEff3Button->setEnabled(checked);
+    ui->idbNU0CEdit->setEnabled(checked);
 
     if (checked)
     {

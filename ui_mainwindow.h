@@ -204,6 +204,8 @@ public:
     QLabel *label_44;
     QCheckBox *idbFlag4Check;
     QComboBox *idbPartSetComboBox;
+    QLineEdit *idbNU0CEdit;
+    QLabel *label_24;
     QMenuBar *menuBar;
     QMenu *menuFile;
     QMenu *menuHelp;
@@ -720,6 +722,12 @@ public:
         idbPartSetComboBox = new QComboBox(idbTab);
         idbPartSetComboBox->setObjectName(QStringLiteral("idbPartSetComboBox"));
         idbPartSetComboBox->setGeometry(QRect(303, 418, 75, 22));
+        idbNU0CEdit = new QLineEdit(idbTab);
+        idbNU0CEdit->setObjectName(QStringLiteral("idbNU0CEdit"));
+        idbNU0CEdit->setGeometry(QRect(523, 298, 75, 20));
+        label_24 = new QLabel(idbTab);
+        label_24->setObjectName(QStringLiteral("label_24"));
+        label_24->setGeometry(QRect(475, 300, 47, 13));
         tabWidget->addTab(idbTab, QString());
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
@@ -977,6 +985,7 @@ public:
         idbHufCheck->setText(QApplication::translate("MainWindow", "HUF", 0));
         label_44->setText(QApplication::translate("MainWindow", "Effect 2:", 0));
         idbFlag4Check->setText(QApplication::translate("MainWindow", "Colorable flag", 0));
+        label_24->setText(QApplication::translate("MainWindow", "NU_0C:", 0));
         tabWidget->setTabText(tabWidget->indexOf(idbTab), QApplication::translate("MainWindow", "IDB", 0));
         menuFile->setTitle(QApplication::translate("MainWindow", "File", 0));
         menuHelp->setTitle(QApplication::translate("MainWindow", "Help", 0));
