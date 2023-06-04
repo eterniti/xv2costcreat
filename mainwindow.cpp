@@ -2453,8 +2453,8 @@ void MainWindow::ItemToGui(const X2mItem &item)
     }
 
     ui->idbStarsEdit->setText(QString("%1").arg((int16_t)item.idb.stars));
-    ui->idbU0AEdit->setText(QString("%1").arg((int16_t)item.idb.unk_0A));
-    ui->idbU0CEdit->setText(QString("%1").arg((int16_t)item.idb.unk_0C));
+    ui->idbU0AEdit->setText(QString("%1").arg((int16_t)item.idb.dlc_flag));
+    ui->idbU0CEdit->setText(QString("%1").arg((int16_t)item.idb.availability));
     ui->idbU0EEdit->setText(QString("%1").arg((int16_t)item.idb.unk_0E));
     ui->idbBuyEdit->setText(QString("%1").arg((int32_t)item.idb.buy));
     ui->idbSellEdit->setText(QString("%1").arg((int32_t)item.idb.sell));
@@ -2529,8 +2529,8 @@ void MainWindow::GuiToItem(X2mItem &item)
     // Name and Desc are handled by the text events
 
     item.idb.stars = (uint16_t) ui->idbStarsEdit->text().toInt();
-    item.idb.unk_0A = (uint16_t) ui->idbU0AEdit->text().toInt();
-    item.idb.unk_0C = (uint16_t) ui->idbU0CEdit->text().toInt();
+    item.idb.dlc_flag = (uint16_t) ui->idbU0AEdit->text().toInt();
+    item.idb.availability = (uint16_t) ui->idbU0CEdit->text().toInt();
     item.idb.unk_0E = (uint16_t) ui->idbU0EEdit->text().toInt();
     item.idb.buy = (uint32_t) ui->idbBuyEdit->text().toInt();
     item.idb.sell = (uint32_t) ui->idbSellEdit->text().toInt();

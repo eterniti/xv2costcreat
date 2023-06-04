@@ -631,7 +631,7 @@ public:
         label_38->setGeometry(QRect(43, 420, 31, 16));
         label_34 = new QLabel(idbTab);
         label_34->setObjectName(QStringLiteral("label_34"));
-        label_34->setGeometry(QRect(31, 340, 47, 13));
+        label_34->setGeometry(QRect(5, 340, 70, 13));
         label_40 = new QLabel(idbTab);
         label_40->setObjectName(QStringLiteral("label_40"));
         label_40->setGeometry(QRect(31, 460, 41, 16));
@@ -664,7 +664,7 @@ public:
         idbStarsEdit->setGeometry(QRect(73, 298, 75, 20));
         label_33 = new QLabel(idbTab);
         label_33->setObjectName(QStringLiteral("label_33"));
-        label_33->setGeometry(QRect(263, 300, 47, 13));
+        label_33->setGeometry(QRect(242, 300, 61, 16));
         label_42 = new QLabel(idbTab);
         label_42->setObjectName(QStringLiteral("label_42"));
         label_42->setGeometry(QRect(483, 460, 47, 13));
@@ -732,7 +732,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 661, 21));
+        menuBar->setGeometry(QRect(0, 0, 661, 22));
         menuFile = new QMenu(menuBar);
         menuFile->setObjectName(QStringLiteral("menuFile"));
         menuHelp = new QMenu(menuBar);
@@ -964,14 +964,14 @@ public:
         idbEff2Button->setText(QApplication::translate("MainWindow", "Edit", 0));
         label_37->setText(QApplication::translate("MainWindow", "Sell:", 0));
         label_38->setText(QApplication::translate("MainWindow", "TP:", 0));
-        label_34->setText(QApplication::translate("MainWindow", "U_0C:", 0));
+        label_34->setText(QApplication::translate("MainWindow", "Availability:", 0));
         label_40->setText(QApplication::translate("MainWindow", "U_24:", 0));
         label_22->setText(QApplication::translate("MainWindow", "Race lock:", 0));
         label_41->setText(QApplication::translate("MainWindow", "U_28:", 0));
         idbHumCheck->setText(QApplication::translate("MainWindow", "HUM", 0));
         label_36->setText(QApplication::translate("MainWindow", "Buy:", 0));
         label_45->setText(QApplication::translate("MainWindow", "Effect 3:", 0));
-        label_33->setText(QApplication::translate("MainWindow", "U_0A:", 0));
+        label_33->setText(QApplication::translate("MainWindow", "DLC Flag:", 0));
         label_42->setText(QApplication::translate("MainWindow", "U_2C:", 0));
         idbFriCheck->setText(QApplication::translate("MainWindow", "FRI", 0));
         idbSymCheck->setText(QApplication::translate("MainWindow", "SYM", 0));

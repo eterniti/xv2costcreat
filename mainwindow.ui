@@ -1473,14 +1473,14 @@
      <widget class="QLabel" name="label_34">
       <property name="geometry">
        <rect>
-        <x>31</x>
+        <x>5</x>
         <y>340</y>
-        <width>47</width>
+        <width>70</width>
         <height>13</height>
        </rect>
       </property>
       <property name="text">
-       <string>U_0C:</string>
+       <string>Availability:</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_40">
@@ -1604,14 +1604,14 @@
      <widget class="QLabel" name="label_33">
       <property name="geometry">
        <rect>
-        <x>263</x>
+        <x>242</x>
         <y>300</y>
-        <width>47</width>
-        <height>13</height>
+        <width>61</width>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
-       <string>U_0A:</string>
+       <string>DLC Flag:</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_42">
@@ -1875,7 +1875,7 @@
      <x>0</x>
      <y>0</y>
      <width>661</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
