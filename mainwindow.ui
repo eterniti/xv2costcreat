@@ -1192,6 +1192,11 @@
         <string>Korean</string>
        </property>
       </item>
+      <item>
+       <property name="text">
+        <string>Japanese</string>
+       </property>
+      </item>
      </widget>
      <widget class="QLabel" name="label_21">
       <property name="geometry">
@@ -1360,6 +1365,11 @@
       <item>
        <property name="text">
         <string>Korean</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Japanese</string>
        </property>
       </item>
      </widget>

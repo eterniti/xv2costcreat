@@ -930,6 +930,7 @@ public:
          << QApplication::translate("MainWindow", "Chinese (tw)", 0)
          << QApplication::translate("MainWindow", "Chinese (zh)", 0)
          << QApplication::translate("MainWindow", "Korean", 0)
+         << QApplication::translate("MainWindow", "Japanese", 0)
         );
         label_21->setText(QApplication::translate("MainWindow", "Item type:", 0));
         idbTypeComboBox->clear();
@@ -956,6 +957,7 @@ public:
          << QApplication::translate("MainWindow", "Chinese (tw)", 0)
          << QApplication::translate("MainWindow", "Chinese (zh)", 0)
          << QApplication::translate("MainWindow", "Korean", 0)
+         << QApplication::translate("MainWindow", "Japanese", 0)
         );
         idbNameCopyButton->setText(QApplication::translate("MainWindow", "Copy", 0));
         idbMafCheck->setText(QApplication::translate("MainWindow", "MAF", 0));
