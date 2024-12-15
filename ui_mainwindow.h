@@ -65,6 +65,7 @@ public:
     QAction *actionFromGameCostumeGlovesDesc;
     QAction *actionFromGameCostumeShoesDesc;
     QAction *actionFromGameAccessoryDesc;
+    QAction *actionToggle_dark_theme;
     QWidget *centralWidget;
     QTabWidget *tabWidget;
     QWidget *modInfoTab;
@@ -209,6 +210,7 @@ public:
     QMenuBar *menuBar;
     QMenu *menuFile;
     QMenu *menuHelp;
+    QMenu *menuView;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
@@ -279,6 +281,8 @@ public:
         actionFromGameCostumeShoesDesc->setObjectName(QStringLiteral("actionFromGameCostumeShoesDesc"));
         actionFromGameAccessoryDesc = new QAction(MainWindow);
         actionFromGameAccessoryDesc->setObjectName(QStringLiteral("actionFromGameAccessoryDesc"));
+        actionToggle_dark_theme = new QAction(MainWindow);
+        actionToggle_dark_theme->setObjectName(QStringLiteral("actionToggle_dark_theme"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         tabWidget = new QTabWidget(centralWidget);
@@ -737,6 +741,8 @@ public:
         menuFile->setObjectName(QStringLiteral("menuFile"));
         menuHelp = new QMenu(menuBar);
         menuHelp->setObjectName(QStringLiteral("menuHelp"));
+        menuView = new QMenu(menuBar);
+        menuView->setObjectName(QStringLiteral("menuView"));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -746,12 +752,14 @@ public:
         MainWindow->setStatusBar(statusBar);
 
         menuBar->addAction(menuFile->menuAction());
+        menuBar->addAction(menuView->menuAction());
         menuBar->addAction(menuHelp->menuAction());
         menuFile->addAction(actionOpen);
         menuFile->addAction(actionSave);
         menuFile->addSeparator();
         menuFile->addAction(actionExit);
         menuHelp->addAction(actionAbout);
+        menuView->addAction(actionToggle_dark_theme);
         mainToolBar->addAction(actionOpen);
         mainToolBar->addAction(actionSave);
 
@@ -851,6 +859,7 @@ public:
 #ifndef QT_NO_TOOLTIP
         actionFromGameAccessoryDesc->setToolTip(QApplication::translate("MainWindow", "From game (accessory_item)", 0));
 #endif // QT_NO_TOOLTIP
+        actionToggle_dark_theme->setText(QApplication::translate("MainWindow", "Toggle dark theme", 0));
         label->setText(QApplication::translate("MainWindow", "Name:", 0));
         label_3->setText(QApplication::translate("MainWindow", "Author:", 0));
         guidButton->setText(QApplication::translate("MainWindow", "Generate new", 0));
@@ -991,6 +1000,7 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(idbTab), QApplication::translate("MainWindow", "IDB", 0));
         menuFile->setTitle(QApplication::translate("MainWindow", "File", 0));
         menuHelp->setTitle(QApplication::translate("MainWindow", "Help", 0));
+        menuView->setTitle(QApplication::translate("MainWindow", "View", 0));
     } // retranslateUi
 
 };

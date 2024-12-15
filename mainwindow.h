@@ -137,6 +137,8 @@ private slots:
 
     void on_guidCopyButton_clicked();
 
+    void on_actionToggle_dark_theme_triggered();
+
 protected:
     void closeEvent(QCloseEvent *event);
 
@@ -187,6 +189,8 @@ private:
     void CopyIdb(IdbFile *idb, X2mItemType type);
     void CopyName(IdbFile *idb, X2mItemType type);
     void CopyDesc(IdbFile *idb, X2mItemType type);
+
+    void ToggleDarkTheme(bool update_config);
 };
 
 #endif // MAINWINDOW_H
